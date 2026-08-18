@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India's Critical Minerals EXIM Analysis | CODEVATIVE</title>
+    <meta name="description" content="Comprehensive data analytics solution analyzing India's Export-Import data for Copper, Lithium, and Graphite to support strategic mineral security.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◆</span>
+                CODEVATIVE
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#methodology">Methodology</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#forecasts">Forecasts</a></li>
+                <li><a href="#insights">Insights</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">Data Analytics Hackathon 2025</span>
+                <h1 class="hero-title">India's Critical Minerals</h1>
+                <p class="hero-subtitle">EXIM Analysis & Forecasting</p>
+                <p class="hero-description">
+                    A comprehensive data-driven analysis of Copper, Lithium & Graphite trade patterns 
+                    to strengthen India's strategic mineral security.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">88.44%</span>
+                        <span class="stat-label">Import Dependency</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">7+ Years</span>
+                        <span class="stat-label">Historical Data</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">3</span>
+                        <span class="stat-label">Critical Minerals</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#dashboard" class="btn btn-primary">Explore Dashboard</a>
+                    <a href="#methodology" class="btn btn-secondary">View Analysis</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="minerals-grid">
+                    <div class="mineral-card copper">
+                        <div class="mineral-icon">Cu</div>
+                        <span>Copper</span>
+                    </div>
+                    <div class="mineral-card lithium">
+                        <div class="mineral-icon">Li</div>
+                        <span>Lithium</span>
+                    </div>
+                    <div class="mineral-card graphite">
+                        <div class="mineral-icon">C</div>
+                        <span>Graphite</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Problem Statement</span>
+                <h2 class="section-title">Why Critical Minerals Matter</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">
+                        India relies heavily on imported critical minerals essential for infrastructure development, 
+                        renewable energy systems, electric vehicles, and defense manufacturing. Understanding trade 
+                        dynamics, dependency levels, and future demand-supply gaps is crucial for informed decision-making.
+                    </p>
+                    <div class="objectives">
+                        <h3>Study Objectives</h3>
+                        <ul class="objectives-list">
+                            <li>
+                                <span class="objective-icon">📊</span>
+                                <span>Analyze 7+ years (2017–2024) of historical EXIM data</span>
+                            </li>
+                            <li>
+                                <span class="objective-icon">📈</span>
+                                <span>Quantify import-export imbalances using volume and value metrics</span>
+                            </li>
+                            <li>
+                                <span class="objective-icon">🔍</span>
+                                <span>Identify minerals with persistent trade deficits</span>
+                            </li>
+                            <li>
+                                <span class="objective-icon">🔮</span>
+                                <span>Forecast future trade volumes for 6–12 months</span>
+                            </li>
+                            <li>
+                                <span class="objective-icon">💡</span>
+                                <span>Support evidence-based recommendations</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <div class="card-icon copper-bg">Cu</div>
+                        <h4>Copper</h4>
+                        <p>Despite adequate ore availability, value-added copper imports exceed exports by approximately ₹8,000–10,000 crore annually.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon lithium-bg">Li</div>
+                        <h4>Lithium</h4>
+                        <p>Nearly 100% import-dependent. CAGR of ~25–30% with forecasts indicating another 30% increase within 2–3 years.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon graphite-bg">C</div>
+                        <h4>Graphite</h4>
+                        <p>Imports exceed exports by 2–4× annually. Over 65% of imports used in energy storage and industrial applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="section methodology" id="methodology">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Approach</span>
+                <h2 class="section-title">Data & Methodology</h2>
+            </div>
+            <div class="methodology-grid">
+                <div class="method-card">
+                    <div class="method-number">01</div>
+                    <h3>Data Sources</h3>
+                    <ul>
+                        <li>DGCI&S Import-Export datasets</li>
+                        <li>Ministry of Commerce & Industry</li>
+                        <li>Indian Bureau of Mines (IBM)</li>
+                        <li>Geological Survey of India (GSI)</li>
+                    </ul>
+                </div>
+                <div class="method-card">
+                    <div class="method-number">02</div>
+                    <h3>Data Preprocessing</h3>
+                    <ul>
+                        <li>Cleaned 100,000+ trade records</li>
+                        <li>Removed missing values (&lt;3% of data)</li>
+                        <li>Converted to time-series format</li>
+                        <li>Aggregated monthly data</li>
+                    </ul>
+                </div>
+                <div class="method-card">
+                    <div class="method-number">03</div>
+                    <h3>Exploratory Analysis</h3>
+                    <ul>
+                        <li>Import vs Export trend visualization</li>
+                        <li>Production vs trade comparison</li>
+                        <li>Monthly and yearly trends</li>
+                        <li>Value vs volume assessment</li>
+                    </ul>
+                </div>
+                <div class="method-card">
+                    <div class="method-number">04</div>
+                    <h3>Forecasting</h3>
+                    <ul>
+                        <li>Time-series modeling (ARIMA)</li>
+                        <li>Short-term forecasts (6–12 months)</li>
+                        <li>Medium-term projections (2–3 years)</li>
+                        <li>MAE, MAPE, RMSE evaluation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <h3>Tools & Technologies</h3>
+                <div class="tech-icons">
+                    <div class="tech-item">
+                        <span class="tech-name">Python</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Pandas</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Matplotlib</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Seaborn</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Statsmodels</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="section dashboard" id="dashboard">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Interactive Analysis</span>
+                <h2 class="section-title">EXIM Dashboard</h2>
+            </div>
+            
+            <!-- Filters -->
+            <div class="dashboard-filters">
+                <div class="filter-group">
+                    <label for="mineralSelect">Mineral</label>
+                    <select id="mineralSelect">
+                        <option value="all">All Minerals</option>
+                        <option value="copper">Copper</option>
+                        <option value="lithium">Lithium</option>
+                        <option value="graphite">Graphite</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="timeRange">Time Period</label>
+                    <select id="timeRange">
+                        <option value="all">2017-2024</option>
+                        <option value="recent">2022-2024</option>
+                        <option value="historical">2017-2021</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="tradeType">Trade Type</label>
+                    <select id="tradeType">
+                        <option value="both">Import & Export</option>
+                        <option value="import">Import Only</option>
+                        <option value="export">Export Only</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Charts Grid -->
+            <div class="charts-grid">
+                <div class="chart-card full-width">
+                    <div class="chart-header">
+                        <h3>Import vs Export Trends (₹ Crores)</h3>
+                        <span class="chart-subtitle">Monthly data from 2017-2024</span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="trendChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Trade Composition</h3>
+                        <span class="chart-subtitle">Export vs Import Share</span>
+                    </div>
+                    <div class="chart-container pie-container">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Mineral-wise Comparison</h3>
+                        <span class="chart-subtitle">Import dependency by mineral</span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Stats -->
+            <div class="summary-stats">
+                <div class="summary-card">
+                    <div class="summary-icon import-icon">↓</div>
+                    <div class="summary-content">
+                        <span class="summary-value" id="totalImport">₹2,10,103 Cr</span>
+                        <span class="summary-label">Total Imports (2024-25)</span>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-icon export-icon">↑</div>
+                    <div class="summary-content">
+                        <span class="summary-value" id="totalExport">₹24,516 Cr</span>
+                        <span class="summary-label">Total Exports (2024-25)</span>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-icon deficit-icon">⚠</div>
+                    <div class="summary-content">
+                        <span class="summary-value deficit" id="tradeDeficit">-₹1,85,587 Cr</span>
+                        <span class="summary-label">Trade Deficit</span>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-icon ratio-icon">%</div>
+                    <div class="summary-content">
+                        <span class="summary-value" id="dependencyRatio">88.44%</span>
+                        <span class="summary-label">Import Dependency</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forecasting Section -->
+    <section class="section forecasts" id="forecasts">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ML Predictions</span>
+                <h2 class="section-title">Forecasting Results</h2>
+            </div>
+            
+            <div class="forecast-intro">
+                <p>Using time-series modeling (ARIMA), we forecast future import/export volumes for strategic planning. The models indicate continued reliance on imports for critical minerals.</p>
+            </div>
+
+            <div class="forecast-table-container">
+                <table class="forecast-table">
+                    <thead>
+                        <tr>
+                            <th>Mineral</th>
+                            <th>Expected Trend</th>
+                            <th>Growth Estimate</th>
+                            <th>Risk Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="mineral-badge copper">Cu</span>
+                                Copper
+                            </td>
+                            <td><span class="trend stable">Stable</span></td>
+                            <td>±5–7%</td>
+                            <td><span class="risk medium">Medium</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="mineral-badge lithium">Li</span>
+                                Lithium
+                            </td>
+                            <td><span class="trend growth">Strong Growth</span></td>
+                            <td>+25–35%</td>
+                            <td><span class="risk high">High</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="mineral-badge graphite">C</span>
+                                Graphite
+                            </td>
+                            <td><span class="trend moderate">Moderate Growth</span></td>
+                            <td>+15–25%</td>
+                            <td><span class="risk medium">Medium</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="forecast-chart-container">
+                <div class="chart-card full-width">
+                    <div class="chart-header">
+                        <h3>Import Volume Forecast (2025-2027)</h3>
+                        <span class="chart-subtitle">Projected growth with confidence intervals</span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="forecastChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model-metrics">
+                <h3>Model Evaluation Metrics</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <span class="metric-name">MAE</span>
+                        <span class="metric-value">2,847</span>
+                        <span class="metric-unit">Mean Absolute Error</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-name">MAPE</span>
+                        <span class="metric-value">8.2%</span>
+                        <span class="metric-unit">Mean Absolute % Error</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-name">RMSE</span>
+                        <span class="metric-value">3,562</span>
+                        <span class="metric-unit">Root Mean Square Error</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-name">R²</span>
+                        <span class="metric-value">0.89</span>
+                        <span class="metric-unit">Coefficient of Determination</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section class="section insights" id="insights">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Strategic Analysis</span>
+                <h2 class="section-title">Key Findings & Recommendations</h2>
+            </div>
+
+            <div class="insights-grid">
+                <div class="insight-column">
+                    <h3 class="insight-heading">🔍 Key Findings</h3>
+                    <div class="insight-cards">
+                        <div class="insight-card">
+                            <div class="insight-icon">📉</div>
+                            <h4>High Import Dependency</h4>
+                            <p>India remains highly import-dependent for Lithium (>95%) and advanced Graphite products.</p>
+                        </div>
+                        <div class="insight-card">
+                            <div class="insight-icon">⚙️</div>
+                            <h4>Processing Gap</h4>
+                            <p>Trade imbalances are driven more by processing limitations than resource scarcity.</p>
+                        </div>
+                        <div class="insight-card">
+                            <div class="insight-icon">📈</div>
+                            <h4>Rising Demand</h4>
+                            <p>Lithium imports show CAGR of 25-30%, driven by EV and renewable energy sectors.</p>
+                        </div>
+                        <div class="insight-card">
+                            <div class="insight-icon">🔋</div>
+                            <h4>Battery Minerals</h4>
+                            <p>Forecasts indicate widening demand-supply gaps for battery-related minerals.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insight-column">
+                    <h3 class="insight-heading">💡 Strategic Recommendations</h3>
+                    <div class="recommendation-list">
+                        <div class="recommendation-item">
+                            <span class="rec-number">01</span>
+                            <div class="rec-content">
+                                <h4>Invest in Downstream Processing</h4>
+                                <p>Build refining infrastructure to reduce reliance on imported value-added products.</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-item">
+                            <span class="rec-number">02</span>
+                            <div class="rec-content">
+                                <h4>Accelerate Domestic Exploration</h4>
+                                <p>Fast-track GSI exploration projects for critical mineral deposits.</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-item">
+                            <span class="rec-number">03</span>
+                            <div class="rec-content">
+                                <h4>Promote Recycling Ecosystems</h4>
+                                <p>Develop battery mineral recycling to create secondary supply sources.</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-item">
+                            <span class="rec-number">04</span>
+                            <div class="rec-content">
+                                <h4>Diversify Trade Partners</h4>
+                                <p>Reduce dependence on limited supplier nations through strategic partnerships.</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-item">
+                            <span class="rec-number">05</span>
+                            <div class="rec-content">
+                                <h4>Public-Private Partnerships</h4>
+                                <p>Encourage collaboration in critical mineral development and R&D.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">
+                        <span class="logo-icon">◆</span>
+                        CODEVATIVE
+                    </span>
+                    <p>Data Analytics for Strategic Mineral Security</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#methodology">Methodology</a></li>
+                            <li><a href="#dashboard">Dashboard</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">GitHub Repository</a></li>
+                            <li><a href="#">Full Report (PDF)</a></li>
+                            <li><a href="#">Data Sources</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Team CODEVATIVE. Built for Mineral Forcasting Hackathon.</p>
+                <p class="disclaimer">Disclaimer: This is a hackathon MVP project for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
