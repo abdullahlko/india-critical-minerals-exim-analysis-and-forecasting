@@ -5,6 +5,9 @@
 
 An interactive, data-driven web platform that analyzes **India’s Import-Export (EXIM) trends** for **critical minerals** including **Copper, Lithium and Graphite** and provides **insights and forecasts** to support strategic decision-making for policy and industry.
 
+🔗 **Live Project Website**  
+👉 https://abdullahlko.github.io/india-critical-minerals-exim-analysis-and-forecasting/
+
 ---
 
 ## 📌 Problem Statement
